@@ -16,7 +16,7 @@ message UserRequest {
 
 message UserResponse {
   int32 id = 1;
-  string usernname = 2;
+  string username = 2;
   string name = 3;
   int32 age = 4;
   Gender gender = 5;
