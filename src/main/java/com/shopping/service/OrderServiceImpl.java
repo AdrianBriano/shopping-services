@@ -25,7 +25,7 @@ public class OrderServiceImpl extends OrderServiceGrpc.OrderServiceImplBase {
                     .setOrderId(order.getOrderId())
                     .setUserId(order.getUserId())
                     .setNoOfItems(order.getNoOfItems())
-                    .setTotalAmount(order.getAmount())
+                    .setTotalAmount(order.getTotalAmount())
                     .setOrderDate(Timestamps.fromMillis(order.getOrderDate().getTime())).build()).collect(Collectors.toList());
 
         OrderResponse orderResponse = OrderResponse.newBuilder().addAllOrder(responseOrders).build();

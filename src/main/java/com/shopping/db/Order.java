@@ -5,14 +5,10 @@ import java.util.Date;
 public class Order {
 
     private int userId;
-
-    public int getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
-    }
+    private int orderId;
+    private int noOfItems;
+    private double totalAmount;
+    private Date orderDate;
 
     public int getUserId() {
         return userId;
@@ -20,6 +16,14 @@ public class Order {
 
     public void setUserId(int userId) {
         this.userId = userId;
+    }
+
+    public int getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
     public int getNoOfItems() {
@@ -30,12 +34,12 @@ public class Order {
         this.noOfItems = noOfItems;
     }
 
-    public double getAmount() {
-        return amount;
+    public double getTotalAmount() {
+        return totalAmount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 
     public Date getOrderDate() {
@@ -45,12 +49,4 @@ public class Order {
     public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
     }
-
-    private int orderId;
-    private int noOfItems;
-    private double amount;
-    private Date orderDate;
-
-
-
 }

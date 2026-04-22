@@ -29,7 +29,7 @@ public class OrderDao {
                 order.setUserId(resultSet.getInt("user_id"));
                 order.setOrderId(resultSet.getInt("order_id"));
                 order.setNoOfItems(resultSet.getInt("no_of_items"));
-                order.setAmount(resultSet.getDouble("amount"));
+                order.setTotalAmount(resultSet.getDouble("total_amount"));
                 order.setOrderDate(resultSet.getDate("order_date"));
 
                 orders.add(order);
